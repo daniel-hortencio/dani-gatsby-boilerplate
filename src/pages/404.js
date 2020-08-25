@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import demoImg from '../images/404.png'
 import SEO from "../components/SEO"
 import Section from '../components/Section'
