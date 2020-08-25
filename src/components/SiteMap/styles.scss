@@ -1,0 +1,19 @@
+@import '../../styles/global.scss';
+
+.li-header{
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 0.3;
+}
+
+.site-map-list{
+    margin-bottom: 20px;
+}
+
+.site-map-list a{
+    color: $white;
+}
+
+.site-map-list a:hover {
+    border-bottom: solid 1px $white!important;
+}

@@ -1,0 +1,31 @@
+@import '../../styles/global.scss';
+
+section .container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: $desktop;
+    padding: 20px; 
+    @media(min-width: $notebook){
+        
+    }
+}
+
+.banner-top .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media(min-width: $notebook){
+        height: 85vh;
+        flex-direction: row;        
+        justify-content: space-between;
+    }
+}
+
+.banner-top h1, .banner-top p{
+    text-align: center;
+    @media(min-width: $notebook){
+        text-align: right;
+    }
+}
+
+

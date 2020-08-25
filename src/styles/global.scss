@@ -1,0 +1,41 @@
+@import './colors.scss';
+@import './fonts.scss';
+@import './breakpoints.scss';
+
+/** ----------------------------- Reset CSS ----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background: none;    
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/** ------------------------------- Scroolbar ------------------------------- */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ccc; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #aaa; 
+}

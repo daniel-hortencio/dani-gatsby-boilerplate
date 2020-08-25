@@ -1,0 +1,21 @@
+@import '../../styles/global.scss';
+
+.social-media a + a{
+    margin-left: 8px;
+}
+
+.social-media svg{
+    color: $white;
+    transition: color 0.3s;
+}
+
+.social-media a:hover{
+    cursor: pointer;
+}
+
+.social-media a:hover svg{
+    color: #ddd;
+}
+
+
+

@@ -1,0 +1,108 @@
+@import '../../styles/global.scss';
+
+.menu-nav{
+    transition: height 0.3s, margin 0.3s;
+    -webkit-transition: height 0.3s, margin 0.3s, opacity 0.3s;
+    width: 100%;
+    position: fixed;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media(min-width: $notebook){
+        width: auto;
+        position: initial;
+        margin-left: initial;
+        padding-left: initial;
+        padding-right: initial;
+    }
+}
+
+.menu-nav ul{
+    display: block;
+    background: $white;
+    margin-top: 50px;    
+    @media(min-width: $notebook){
+        display: flex;
+        background: none;
+        margin-top: initial;    
+    }
+}
+
+
+.menu-close{
+    background: $white;
+    height: 200px;
+    margin-top: -210px;
+    opacity: 0;
+    @media(min-width: $notebook){
+        background: initial;
+        height: auto;
+        margin-top: initial;
+        opacity: 1;
+    }
+}
+
+.menu-open{    
+    background: $white;
+    height: 100vh;
+    margin-top: 50px;
+    opacity: 0.95;
+    @media(min-width: $notebook){
+        background: initial;
+        height: auto;
+        margin-top: initial;
+        opacity: 1;
+    }
+}
+
+.menu-nav li{
+    padding: 10px 0;
+}
+
+.menu-nav a{
+    padding: 10px 20px;
+    color: $red;  
+    @media(min-width: $notebook){
+        color: $white;
+    }
+}
+
+.menu-nav a:hover{
+    color: $white;
+    background: $red-dark;
+}
+
+.actived-link{
+    color: $red;
+    border-left: solid 2px $red;
+    @media(min-width: $notebook){
+        border-left: 0;
+        border-bottom:solid 2px $white;
+        color: $white;
+    }
+}
+.actived-link:hover{
+    background: none!important;
+    color: $red!important;
+    @media(min-width: $notebook){
+        color: $white!important;
+    }
+}
+
+/**---------------------------------Menu Mobile Icon---------------------------*/
+
+.menu-mobile-icon{
+    @media(min-width: $notebook){
+        display: none;
+    }
+}
+
+.menu-mobile-icon svg{
+    color: $white;
+    width: 30px!important;
+    height: 30px!important;
+
+}
+
+
+
